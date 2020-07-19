@@ -1,4 +1,3 @@
-#include <stdint.h> // for uint8_t
 #include <stdio.h> // for printf
 #include <netinet/in.h>
 #include <math.h>
@@ -29,11 +28,11 @@ int main(int argc, char *argv[]) {
 	uint32_t* p1 = reinterpret_cast<uint32_t*>(buf);
 	uint32_t n1 = ntohl(*p1);
 
-
 	int sum=0;
-	sum = n + n1;
+	sum = n + n1;	
 	printf("%d(0x%x) + %d(0x%x) = %d(0x%x)\n", n, n, n1, n1, sum, sum);
 }
 	
+
 
 
